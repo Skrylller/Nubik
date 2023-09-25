@@ -14,6 +14,10 @@ public class NewUIController : MonoBehaviour
     {
         main = this;
 
+    }
+
+    private void Start()
+    {
         ExitMenu();
     }
 

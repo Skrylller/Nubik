@@ -13,6 +13,7 @@ public class BulletModel : ScriptableObject
     [SerializeField] private bool _raycastPhysics;
     [SerializeField] private float _distance;
     [SerializeField] private float _distanceBackCheck;
+    [SerializeField] private int _hitNumbers;
 
     public BulletEntity BulletPref => _bulletPref;
     public float Speed { get { return _speed; } }
@@ -22,4 +23,5 @@ public class BulletModel : ScriptableObject
     public bool RaycastPhysics => _raycastPhysics;
     public float Distance { get { return _distance; } }
     public float DistanceBackCheck { get { return _distanceBackCheck; } }
+    public float HitNumbers { get { return _hitNumbers; } }
 }

@@ -85,6 +85,11 @@ public class PlayerController : MonoBehaviour, IMousePositionVisitor
             SetRotator(rotator, mousePos);
         }
 
+        if (mousePos.x > transform.position.x)
+            _spriteSwitcher.State = (int)SpriteState.Right;
+        else
+            _spriteSwitcher.State = (int)SpriteState.Left;
+
         void SetRotator(ToTargetRotator2D rotator, Vector2 mousePos)
         {
             float xBias = mousePos.x - rotator.transform.position.x;

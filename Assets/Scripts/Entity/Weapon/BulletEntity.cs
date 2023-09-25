@@ -59,11 +59,11 @@ public class BulletEntity : PullableObj
         }
     }
 
-    private void Shoot(float angle)
+    private void Shoot(float scatterAngle)
     {
 
         _defPos = transform.position;
-        transform.eulerAngles += new Vector3(0, 0, angle);
+        transform.eulerAngles += new Vector3(0, 0, scatterAngle);
         _direction = new Vector2(transform.eulerAngles.z > 90 && transform.eulerAngles.z < 270 ? -1 : 1, transform.eulerAngles.z > 180 ? -1 : 1);
 
         if (_model.RaycastPhysics)
@@ -103,32 +103,32 @@ public class BulletEntity : PullableObj
     private void Hit()
     {
         numHits++;
-        if(numHits >= 5)
+        if(numHits >= _model.HitNumbers)
         {
-            //Deactivate();
+            Deactivate();
         }
 
 
-        if (_hit.collider.gameObject.layer == 0 && numHits == 1)
+        if (_hit.collider.gameObject.layer == 0)
         {
-            transform.position = _hit.point;
-            
-            float rot = 0;
+            Vector2 dirVector = _hit.point - _defPos;
 
-            Vector2 aim = Vector2.Reflect(_defPos, _hit.normal);
+            transform.position = _hit.point - (new Vector2(dirVector.x / Mathf.Abs(dirVector.x), dirVector.y / Mathf.Abs(dirVector.y)) * 0.01f);
 
-            Debug.Log($"{_defPos} {_hit.normal} {aim}");
+            Vector2 aim = Vector2.Reflect(dirVector, _hit.normal);
 
-            rot = Mathf.Atan2(aim.y - _hit.point.y, aim.x - _hit.point.x) * Mathf.Rad2Deg;
+            float angle = Mathf.Atan((aim.y) / (aim.x)) * Mathf.Rad2Deg + 180;
 
-            Debug.Log(rot);
+            if (aim.x > 0)
+                angle -= 180;
 
-            Shoot(rot);
+            transform.eulerAngles = new Vector3(0, 0, angle);
+            Shoot(0);
         }
         else
         {
             transform.position = _hit.point;
-            _hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector3.right), _model.Distance, 0);
+            Shoot(0);
         }
     }
 
