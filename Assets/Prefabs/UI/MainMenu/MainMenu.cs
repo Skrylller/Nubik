@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] List<Location> levels = new List<Location>();
+    public static MainMenu main;
+
+    [HideInInspector] public List<Location> _levels = new List<Location>();
 
     [SerializeField] LevelButton LevelButton;
 
     [SerializeField] PullObjects levelsPull;
 
-    private void Start()
+    private void Awake()
     {
+        main = this;
+    }
+
+    public void Init(List<Location> levels)
+    {
+        _levels = levels;
         levelsPull.Clear();
         for(int i = 0; i < levels.Count; i++)
         {

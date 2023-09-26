@@ -8,8 +8,10 @@ public class HudUI : MonoBehaviour
 
     [SerializeField] PullObjects _bulletsPull;
     [SerializeField] GameObject _exitPanel;
+    [SerializeField] GameObject _successPanel;
 
-    WeaponModel _weapon;
+    private Location _location;
+    private WeaponModel _weapon;
 
     public void Awake()
     {
@@ -30,9 +32,12 @@ public class HudUI : MonoBehaviour
             _weapon.OnChangeBullet -= SetBullet;
     }
 
-    public void Init(WeaponModel weapon)
+    public void Init(WeaponModel weapon, Location location)
     {
+        _location = location;
+
         _exitPanel.SetActive(false);
+        _successPanel.SetActive(false);
 
         if (_weapon == null)
         {
@@ -55,16 +60,38 @@ public class HudUI : MonoBehaviour
     public void ExitMenu()
     {
         _exitPanel.SetActive(true);
+
+        _successPanel.SetActive(false);
     }
 
     public void NoExit()
     {
         _exitPanel.SetActive(false);
+
+        _successPanel.SetActive(false);
     }
 
     public void YesExit()
     {
         _exitPanel.SetActive(false);
+
+        _successPanel.SetActive(false);
         NewUIController.main.ExitMenu();
+    }
+
+    public void Restart()
+    {
+        _location.StartLocation();
+    }
+
+    public void LevelSuccess()
+    {
+        _exitPanel.SetActive(false);
+        _successPanel.SetActive(true);
+    }
+
+    public void NextLevel()
+    {
+
     }
 }

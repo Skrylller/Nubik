@@ -20,3 +20,4 @@ MonoBehaviour:
   _raycastPhysics: 1
   _distance: 500
   _distanceBackCheck: 20
+  _hitNumbers: 5

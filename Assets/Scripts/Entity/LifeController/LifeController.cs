@@ -79,6 +79,7 @@ public class LifeController : MonoBehaviour, ISliderVisitor
 
             PullsController.main.GetPull(_particleDeath).AddObj().SetTransform(transform.position);
             gameObject.SetActive(false);
+            OnDeath?.Invoke();
         }
         else
         {

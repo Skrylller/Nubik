@@ -106,6 +106,7 @@ public class BulletEntity : PullableObj
         if(numHits >= _model.HitNumbers)
         {
             Deactivate();
+            return;
         }
 
 
