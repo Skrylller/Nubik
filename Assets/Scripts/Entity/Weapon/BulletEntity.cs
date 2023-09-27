@@ -102,8 +102,7 @@ public class BulletEntity : PullableObj
 
     private void Hit()
     {
-        numHits++;
-        if(numHits >= _model.HitNumbers)
+        if(numHits + 1 >= _model.HitNumbers)
         {
             Deactivate();
             return;
@@ -114,7 +113,15 @@ public class BulletEntity : PullableObj
         {
             Vector2 dirVector = _hit.point - _defPos;
 
-            transform.position = _hit.point - (new Vector2(dirVector.x / Mathf.Abs(dirVector.x), dirVector.y / Mathf.Abs(dirVector.y)) * 0.01f);
+
+
+            float sum = Mathf.Abs(dirVector.x) + Mathf.Abs(dirVector.y);
+            float x = dirVector.x / sum;
+            float y = dirVector.y / sum;
+            transform.position = _hit.point - (new Vector2(x,y) * 0.1f);
+
+
+            Debug.Log($"{dirVector} _hit - {_hit.point} _defPos - {_defPos} x - {x} y - {y}");
 
             Vector2 aim = Vector2.Reflect(dirVector, _hit.normal);
 
@@ -125,6 +132,8 @@ public class BulletEntity : PullableObj
 
             transform.eulerAngles = new Vector3(0, 0, angle);
             Shoot(0);
+
+            numHits++;
         }
         else
         {

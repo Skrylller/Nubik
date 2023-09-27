@@ -18,4 +18,17 @@ public class MainGameController : MonoBehaviour
         NewUIController.main.ExitMenu();
         MainMenu.main.Init(locations);
     }
+
+    public void NextLevel(Location level)
+    {
+
+        if (level.levelNum == locations.Count)
+        {
+            HudUI.main.YesExit();
+        }
+        else
+        {
+            locations[level.levelNum].StartLocation();
+        }
+    }
 }

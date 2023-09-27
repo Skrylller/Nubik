@@ -9,7 +9,7 @@ public class Location : MonoBehaviour
     public Transform CameraPos;
     public List<LifeController> Enemies = new List<LifeController>();
     public Sprite locationImage;
-    public string levelName;
+    public int levelNum;
 
     public void Start()
     {

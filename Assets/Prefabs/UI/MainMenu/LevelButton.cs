@@ -14,7 +14,7 @@ public class LevelButton : PullableObj
     public void Init(Location location)
     {
         _location = location;
-        text.text = location.levelName;
+        text.text = $"Level {location.levelNum}";
         icon.sprite = location.locationImage;
     }
 

@@ -92,6 +92,6 @@ public class HudUI : MonoBehaviour
 
     public void NextLevel()
     {
-
+        MainGameController.main.NextLevel(_location);
     }
 }
