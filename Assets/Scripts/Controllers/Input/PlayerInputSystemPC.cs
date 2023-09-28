@@ -42,6 +42,8 @@ public class PlayerInputSystemPC : MonoBehaviour
     private Action<Vector2> _actionMouse;
     public List<InputButton> InputButtons { get { return _inputButtons; } }
 
+    private bool _isTouch;
+
     private void Awake()
     {
         main = this;
@@ -61,7 +63,10 @@ public class PlayerInputSystemPC : MonoBehaviour
     private void Update()
     {
         _inputButtons.ForEach(x => x.CheckTouch());
+    }
 
+    public void Touch()
+    {
         MousePosition();
     }
 

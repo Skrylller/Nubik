@@ -19,6 +19,14 @@ public class MainGameController : MonoBehaviour
         MainMenu.main.Init(locations);
     }
 
+    public void DeactivateAllLevels()
+    {
+        for(int i = 0; i < locations.Count; i++)
+        {
+            locations[i].gameObject.SetActive(false);
+        }
+    }
+
     public void NextLevel(Location level)
     {
 

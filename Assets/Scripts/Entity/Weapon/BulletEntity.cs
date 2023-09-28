@@ -120,9 +120,6 @@ public class BulletEntity : PullableObj
             float y = dirVector.y / sum;
             transform.position = _hit.point - (new Vector2(x,y) * 0.1f);
 
-
-            Debug.Log($"{dirVector} _hit - {_hit.point} _defPos - {_defPos} x - {x} y - {y}");
-
             Vector2 aim = Vector2.Reflect(dirVector, _hit.normal);
 
             float angle = Mathf.Atan((aim.y) / (aim.x)) * Mathf.Rad2Deg + 180;

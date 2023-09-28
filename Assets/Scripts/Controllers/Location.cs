@@ -21,6 +21,8 @@ public class Location : MonoBehaviour
 
     public void StartLocation()
     {
+        MainGameController.main.DeactivateAllLevels();
+        gameObject.SetActive(true);
         PullsController.main.ClearAll();
         ShootingController.main._weapon.BulletInClip = bulletCount;
         Bootastrap.main.Player.transform.position = PlayerPos.position;

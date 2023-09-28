@@ -9,6 +9,7 @@ public class HudUI : MonoBehaviour
     [SerializeField] PullObjects _bulletsPull;
     [SerializeField] GameObject _exitPanel;
     [SerializeField] GameObject _successPanel;
+    [SerializeField] GameObject _restartPanel;
 
     private Location _location;
     private WeaponModel _weapon;
@@ -36,6 +37,7 @@ public class HudUI : MonoBehaviour
     {
         _location = location;
 
+        _successPanel.SetActive(false);
         _exitPanel.SetActive(false);
         _successPanel.SetActive(false);
 
@@ -57,35 +59,45 @@ public class HudUI : MonoBehaviour
         }
     }
 
+    public void RestartMenu()
+    {
+        _successPanel.SetActive(false);
+        _restartPanel.SetActive(true);
+        _exitPanel.SetActive(false);
+    }
+    
     public void ExitMenu()
     {
-        _exitPanel.SetActive(true);
 
+        _restartPanel.SetActive(false);
+        _exitPanel.SetActive(true);
         _successPanel.SetActive(false);
     }
 
     public void NoExit()
     {
+        _restartPanel.SetActive(false);
         _exitPanel.SetActive(false);
-
         _successPanel.SetActive(false);
     }
 
     public void YesExit()
     {
-        _exitPanel.SetActive(false);
-
-        _successPanel.SetActive(false);
+        NoExit();
         NewUIController.main.ExitMenu();
     }
 
     public void Restart()
     {
+        _exitPanel.SetActive(false);
+        _successPanel.SetActive(false);
+        _restartPanel.SetActive(false);
         _location.StartLocation();
     }
 
     public void LevelSuccess()
     {
+        _successPanel.SetActive(false);
         _exitPanel.SetActive(false);
         _successPanel.SetActive(true);
     }
