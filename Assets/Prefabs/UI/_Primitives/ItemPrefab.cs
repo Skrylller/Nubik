@@ -19,6 +19,7 @@ public class ItemPrefab : PullableObj
         {
             Localizator.main.OnChangeLaunguage += SetLaunguage;
             _item.OnChange += SetData;
+            SetData();
         }
 
     }

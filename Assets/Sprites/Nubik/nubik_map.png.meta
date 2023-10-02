@@ -120,10 +120,10 @@ TextureImporter:
       name: nubik_map_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 889
-        width: 388
-        height: 204
+        x: 19
+        y: 880
+        width: 384
+        height: 208
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: nubik_map_1
       rect:
         serializedVersion: 2
-        x: 388
-        y: 889
-        width: 388
-        height: 204
+        x: 403
+        y: 880
+        width: 384
+        height: 208
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b53083cd2069f8040b349fef57073521
-      internalID: -1154047424
+      spriteID: e20cb9306731f7343bc4fe78e4cf6b40
+      internalID: 338902585
       vertices: []
       indices: 
       edges: []
@@ -162,10 +162,10 @@ TextureImporter:
       name: nubik_map_2
       rect:
         serializedVersion: 2
-        x: 776
-        y: 889
-        width: 388
-        height: 204
+        x: 787
+        y: 880
+        width: 384
+        height: 208
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73904fc115bd97c45a9794705467f917
-      internalID: 842644814
+      spriteID: f72287c86d0caac4d9d2dc9ee2737d1d
+      internalID: 1306781666
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: nubik_map_3
       rect:
         serializedVersion: 2
-        x: 1164
-        y: 889
-        width: 388
-        height: 204
+        x: 1171
+        y: 880
+        width: 384
+        height: 208
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a69140ec92ace5e4a9e6e028a0604f9a
-      internalID: 1216421211
+      spriteID: bd54ebc90a02d6b4b8440cb594f99481
+      internalID: -705332079
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
       name: nubik_map_4
       rect:
         serializedVersion: 2
-        x: 1552
-        y: 889
-        width: 388
-        height: 204
+        x: 1555
+        y: 880
+        width: 384
+        height: 208
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +215,428 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2a5af2463c819f47b86f30833fec77b
-      internalID: -1272125438
+      spriteID: 2818b92fc7b2a2343a5e5861ff165554
+      internalID: -1853428266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 672
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa3569c4daf142409702433ba67111f
+      internalID: 1660917199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 672
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5631eef1e5dd05a47b12e15ad7e9f9d8
+      internalID: -1306635895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_7
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 672
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f29e2adcdc0f54b95ee744ecc997d2
+      internalID: -569672565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_8
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 672
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107d81a666ca5244ca88210147f2dd43
+      internalID: -1193693933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_9
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 672
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac873214445d4f042a248a55dc69fd6d
+      internalID: -1915128271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 464
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d243f508f4daa488dc4a0d54ee9ca3
+      internalID: 2098558985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_11
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 464
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d02a751df11f144f97a21de4cedbacb
+      internalID: 445432352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_12
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 464
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ad3815628e33141baf92082b94ba57
+      internalID: 2028199263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_13
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 464
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e69f6993303bc841b9e89bac23146ed
+      internalID: -703889938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_14
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 464
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8353a08bed93e4794d5a7f03fbe63d
+      internalID: 1627885440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_15
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 256
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551fc31a9e55d43488ce21272dd233c5
+      internalID: -146954558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_16
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 256
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fada2d6f97d6c741871ac68775a243e
+      internalID: -288000036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_17
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 256
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9c3389f8f5ae549943d33bbf453e43
+      internalID: 1280401704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_18
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 256
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acaebb1625d82864eaa32e1d5fe5f6ff
+      internalID: 1623425427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_19
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 256
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a1719bef0bc3d42970c7c2d06ace39
+      internalID: 2095032390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_20
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 48
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2624c3e227e704786fc7f53f290306
+      internalID: 951791095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_21
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 48
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02709a632f9edd48b73c9cc7a4b5ff1
+      internalID: 555901618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_22
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 48
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339f463d9b4a4b247a1f93f94020b186
+      internalID: -1316542151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_23
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 48
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c8d3de1c8573a46b58958cc41d91b9
+      internalID: -686080226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nubik_map_24
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 48
+        width: 384
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f6b458b7ae9df4abaa2bf67d90a383
+      internalID: -226411235
       vertices: []
       indices: 
       edges: []
@@ -233,10 +653,30 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       nubik_map_0: -1830775412
-      nubik_map_1: -1154047424
-      nubik_map_2: 842644814
-      nubik_map_3: 1216421211
-      nubik_map_4: -1272125438
+      nubik_map_1: 338902585
+      nubik_map_10: 2098558985
+      nubik_map_11: 445432352
+      nubik_map_12: 2028199263
+      nubik_map_13: -703889938
+      nubik_map_14: 1627885440
+      nubik_map_15: -146954558
+      nubik_map_16: -288000036
+      nubik_map_17: 1280401704
+      nubik_map_18: 1623425427
+      nubik_map_19: 2095032390
+      nubik_map_2: 1306781666
+      nubik_map_20: 951791095
+      nubik_map_21: 555901618
+      nubik_map_22: -1316542151
+      nubik_map_23: -686080226
+      nubik_map_24: -226411235
+      nubik_map_3: -705332079
+      nubik_map_4: -1853428266
+      nubik_map_5: 1660917199
+      nubik_map_6: -1306635895
+      nubik_map_7: -569672565
+      nubik_map_8: -1193693933
+      nubik_map_9: -1915128271
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

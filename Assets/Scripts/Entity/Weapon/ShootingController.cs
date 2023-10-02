@@ -47,17 +47,6 @@ public class ShootingController : MonoBehaviour
             return;
         }
 
-        WeaponModel tWeapon = PlayerInventory.Inventory.GetWeapon(weapon);
-
-        if (tWeapon == null)
-        {
-            if (_weapon != null && weapon == _weapon.Weapon)
-                SetWeapon(WeaponModel.WeaponType.None);
-            return;
-        }
-
-        _weapon = tWeapon;
-
         _handSwitcher.State = (int)weapon;
         
         OnChangeWeapon?.Invoke(weapon);

@@ -33,8 +33,8 @@ public class BulletEntity : PullableObj
         if (_model.RaycastPhysics)
             return;
 
-        if (collision.gameObject.layer != 14)
-            Deactivate();
+        if (collision.gameObject.layer != 8)
+            Deactive();
     }
 
     public void Init(BulletModel model, Transform defPos, float angle = 0)
@@ -104,7 +104,7 @@ public class BulletEntity : PullableObj
     {
         if(numHits + 1 >= _model.HitNumbers)
         {
-            Deactivate();
+            Deactive();
             return;
         }
 
@@ -139,9 +139,15 @@ public class BulletEntity : PullableObj
         }
     }
 
+    private void Deactive()
+    {
+        MainGameController.main.CheckLoose();
+        Deactivate();
+    }
+
     private IEnumerator DeactivateCourotine()
     {
         yield return new WaitForSeconds(_model.LifeTime);
-        Deactivate();
+        Deactive();
     }
 }

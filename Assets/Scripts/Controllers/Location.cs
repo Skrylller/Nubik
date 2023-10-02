@@ -5,9 +5,11 @@ using UnityEngine;
 public class Location : MonoBehaviour
 {
     public uint bulletCount;
+    public uint bulletCountStar;
     public Transform PlayerPos;
     public Transform CameraPos;
     public List<LifeController> Enemies = new List<LifeController>();
+    public List<LifeController> Diamonds = new List<LifeController>();
     public Sprite locationImage;
     public int levelNum;
 
@@ -15,13 +17,14 @@ public class Location : MonoBehaviour
     {
         foreach(LifeController life in Enemies)
         {
-            life.OnDeath += CheckEndLevel;
+            life.OnDeath += EndLevel;
         }
     }
 
     public void StartLocation()
     {
         MainGameController.main.DeactivateAllLevels();
+        MainGameController.main.SetLevel(this);
         gameObject.SetActive(true);
         PullsController.main.ClearAll();
         ShootingController.main._weapon.BulletInClip = bulletCount;
@@ -33,16 +36,38 @@ public class Location : MonoBehaviour
         {
             Enemies[i].gameObject.SetActive(true);
         }
+        for (int i = 0; i < Diamonds.Count; i++)
+        {
+            Diamonds[i].gameObject.SetActive(true);
+        }
     }
 
-    private void CheckEndLevel()
+    public void EndLevel()
+    {
+        CheckEndLevel();
+    }
+
+    public bool CheckEndLevel()
     {
         foreach(LifeController enemy in Enemies)
         {
             if (enemy.gameObject.activeSelf)
-                return;
+                return false;
         }
 
-        HudUI.main.LevelSuccess();
+        int star = 2;
+
+        foreach (LifeController diamond in Diamonds)
+        {
+            if (diamond.gameObject.activeSelf)
+               star = 1;
+        }
+
+        if (bulletCount - bulletCountStar <= MainGameController.main.weapon.BulletInClip)
+            star++;
+
+        HudUI.main.LevelSuccess(star);
+
+        return true;
     }
 }

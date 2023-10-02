@@ -52,8 +52,7 @@ public class Inventory
             {
                 UIController.main.MessageUI.AddItem(item as KeyModel);
 
-                if(DaysController.main.IsDay)
-                    SaveItem(key.Key, 1);
+                SaveItem(key.Key, 1);
             }
         }
         else if (item as WeaponModel)
@@ -65,8 +64,7 @@ public class Inventory
             {
                 UIController.main.MessageUI.AddItem(item as WeaponModel);
 
-                if (DaysController.main.IsDay)
-                    SaveItem(weapon.Weapon, 1);
+                SaveItem(weapon.Weapon, 1);
             }
         }
         else if (item as NoteModel)
@@ -78,8 +76,7 @@ public class Inventory
             {
                 UIController.main.MessageUI.AddItem(item as NoteModel);
 
-                if (DaysController.main.IsDay)
-                    SaveItem(note.NoteType, 1);
+                SaveItem(note.NoteType, 1);
             }
         }
         else
@@ -90,21 +87,19 @@ public class Inventory
             {
                 items.First().Count += value;
 
-                if (isPlayerInventory && DaysController.main.IsDay)
-                    SaveItem(items.First().ItemModel.Item, (int)items.First().GetCount);
+                SaveItem(items.First().ItemModel.Item, (int)items.First().GetCount);
             }
             else
             {
                 _Items.Add(new InventoryItemCounter(item, value));
                 OnUpdate?.Invoke();
 
-                if (isPlayerInventory && DaysController.main.IsDay)
-                    SaveItem(_Items.Last().ItemModel.Item, (int)_Items.Last().GetCount);
+                SaveItem(_Items.Last().ItemModel.Item, (int)_Items.Last().GetCount);
             }
 
             if (isPlayerInventory)
             {
-                UIController.main.MessageUI.AddInventoryItem(new InventoryItemCounter(item, value));
+                //UIController.main.MessageUI.AddInventoryItem(new InventoryItemCounter(item, value));
             }
         }
     }
@@ -144,20 +139,14 @@ public class Inventory
             {
                 itemInventory.Count -= value;
 
-                if (isPlayerInventory && DaysController.main.IsDay)
-                {
-                    SaveItem(item, (int)itemInventory.Count);
-                }
+                SaveItem(item, (int)itemInventory.Count);
 
                 if (itemInventory.Count == 0)
                 {
                     _Items.Remove(itemInventory);
                     OnUpdate?.Invoke();
                     
-                    if (isPlayerInventory && DaysController.main.IsDay)
-                    {
-                        SaveItem(item, 0);
-                    }
+                    SaveItem(item, 0);
                 }
 
 

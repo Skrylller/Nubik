@@ -33,6 +33,11 @@ public class DataController : MonoBehaviour
     private void Awake()
     {
         main = this;
+        LoadInventory(PlayerInventory.Inventory);
+    }
+
+    private void Start()
+    {
     }
 
     public void Save()

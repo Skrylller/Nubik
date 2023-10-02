@@ -6,10 +6,14 @@ public class HudUI : MonoBehaviour
 {
     public static HudUI main;
 
+    [SerializeField] ItemModel.ItemType diamond;
     [SerializeField] PullObjects _bulletsPull;
     [SerializeField] GameObject _exitPanel;
     [SerializeField] GameObject _successPanel;
     [SerializeField] GameObject _restartPanel;
+    [SerializeField] GameObject _losePanel;
+
+    [SerializeField] List<GameObject> _stars = new List<GameObject>();
 
     private Location _location;
     private WeaponModel _weapon;
@@ -40,6 +44,8 @@ public class HudUI : MonoBehaviour
         _successPanel.SetActive(false);
         _exitPanel.SetActive(false);
         _successPanel.SetActive(false);
+        _losePanel.SetActive(false);
+        _restartPanel.SetActive(false);
 
         if (_weapon == null)
         {
@@ -64,6 +70,7 @@ public class HudUI : MonoBehaviour
         _successPanel.SetActive(false);
         _restartPanel.SetActive(true);
         _exitPanel.SetActive(false);
+        _losePanel.SetActive(false);
     }
     
     public void ExitMenu()
@@ -72,6 +79,7 @@ public class HudUI : MonoBehaviour
         _restartPanel.SetActive(false);
         _exitPanel.SetActive(true);
         _successPanel.SetActive(false);
+        _losePanel.SetActive(false);
     }
 
     public void NoExit()
@@ -92,18 +100,53 @@ public class HudUI : MonoBehaviour
         _exitPanel.SetActive(false);
         _successPanel.SetActive(false);
         _restartPanel.SetActive(false);
+        _losePanel.SetActive(false);
         _location.StartLocation();
     }
 
-    public void LevelSuccess()
+    public void LevelSuccess(int star)
     {
+
+        for (int i = 0; i < _stars.Count; i++)
+        {
+            _stars[i].SetActive(false);
+        }
+
         _successPanel.SetActive(false);
         _exitPanel.SetActive(false);
         _successPanel.SetActive(true);
+        _losePanel.SetActive(false);
+
+        for(int i = 0; i < star; i++)
+        {
+            _stars[i].SetActive(true);
+        }
+
+        MainGameController.main.SuccessLevel(_location, star);
+    }
+
+    public void Lose()
+    {
+        _exitPanel.SetActive(false);
+        _successPanel.SetActive(false);
+        _restartPanel.SetActive(false);
+        _losePanel.SetActive(true);
     }
 
     public void NextLevel()
     {
         MainGameController.main.NextLevel(_location);
+    }
+
+    public void PlusBullet()
+    {
+        if (PlayerInventory.Inventory.CheckItem(diamond, 5, true))
+        {
+            _weapon.BulletInClip++;
+            _exitPanel.SetActive(false);
+            _successPanel.SetActive(false);
+            _restartPanel.SetActive(false);
+            _losePanel.SetActive(false);
+        }
     }
 }

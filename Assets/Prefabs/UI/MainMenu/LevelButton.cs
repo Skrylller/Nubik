@@ -8,14 +8,42 @@ public class LevelButton : PullableObj
 {
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Image icon;
+    [SerializeField] Sprite defaultSprite;
+    [SerializeField] Button button;
+
+    [SerializeField] List<GameObject> stars = new List<GameObject>();
 
     Location _location;
 
-    public void Init(Location location)
+    public void Init(Location location, int star, bool open)
     {
         _location = location;
         text.text = $"Level {location.levelNum}";
-        icon.sprite = location.locationImage;
+
+        for(int i = 0; i < stars.Count; i++)
+        {
+            if(star > i)
+            {
+                stars[i].SetActive(true);
+                icon.sprite = location.locationImage;
+                button.interactable = true;
+            }
+            else
+            {
+                stars[i].SetActive(false);
+            }
+        }
+
+        if (open)
+        {
+            button.interactable = true;
+            icon.sprite = location.locationImage;
+        }
+        else
+        {
+            icon.sprite = defaultSprite;
+            button.interactable = false;
+        }
     }
 
     public void StartLevel()
