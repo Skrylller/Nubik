@@ -656,14 +656,14 @@ MonoBehaviour:
     objs: []
     transforms:
     - obj: {fileID: 9119758958042020639}
-      position: {x: 0, y: 0, z: 0}
+      position: {x: -5, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
   - name: Left
     objs: []
     transforms:
     - obj: {fileID: 9119758958042020639}
-      position: {x: 10, y: 0, z: 0}
+      position: {x: -5, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: -1, y: 1, z: 1}
 --- !u!95 &1784609560452675202

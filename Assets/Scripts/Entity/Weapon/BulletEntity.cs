@@ -102,15 +102,17 @@ public class BulletEntity : PullableObj
 
     private void Hit()
     {
-        if(numHits + 1 >= _model.HitNumbers)
-        {
-            Deactive();
-            return;
-        }
-
 
         if (_hit.collider.gameObject.layer == 0)
         {
+
+            if (numHits + 1 >= _model.HitNumbers)
+            {
+                Deactive();
+                return;
+            }
+
+
             Vector2 dirVector = _hit.point - _defPos;
 
 
