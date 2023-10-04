@@ -6,6 +6,7 @@ public class diamond : MonoBehaviour
 {
     [SerializeField] private LifeController _life;
     [SerializeField] private ItemModel _item;
+    [SerializeField] private uint count = 1;
 
     private void Start()
     {
@@ -14,6 +15,6 @@ public class diamond : MonoBehaviour
 
     private void GetDiamond()
     {
-        PlayerInventory.Inventory.AddItem(_item);
+        PlayerInventory.Inventory.AddItem(_item, count);
     }
 }

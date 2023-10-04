@@ -6,6 +6,7 @@ public class MainGameController : MonoBehaviour
 {
     public static MainGameController main;
 
+    public bool openAll;
     public List<Location> locations;
     public List<int> stars;
     public Location location;

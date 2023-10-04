@@ -103,7 +103,7 @@ MonoBehaviour:
   _particle: {fileID: 3049512677406835623, guid: 78a56bff78320904ba6d5db64d4bd7d0, type: 3}
   _layerMask:
     serializedVersion: 2
-    m_Bits: 16449
+    m_Bits: 16705
 --- !u!50 &8227598224308595520
 Rigidbody2D:
   serializedVersion: 4

@@ -134,8 +134,13 @@ public class BulletEntity : PullableObj
 
             numHits++;
         }
+        else if(_hit.collider.gameObject.layer == 8)
+        {
+            Deactive();
+        }
         else
         {
+            
             transform.position = _hit.point;
             Shoot(0);
         }
