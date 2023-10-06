@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPref: {fileID: 2767884668323362108, guid: e58d646f2e74401419d496f9427576b1, type: 3}
   _speed: 500
-  _dammage: 100
+  _dammage: 1
   _lifeTime: 10
   _bulletType: 3
   _raycastPhysics: 1

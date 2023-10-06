@@ -10,8 +10,11 @@ public class LifeController : MonoBehaviour, ISliderVisitor
     private ICapturedObject _IcapturedObject;
     [SerializeField] private PullableObj _particleDammage;
     private PullObjects _partPull;
+    [SerializeField] private float _immortalTime = 1f;
 
     [SerializeField] private EnemyModel _model;
+
+    private Transform[] children;
 
     private bool _isCapture;
     private int _tapCounterCapture;
@@ -46,6 +49,7 @@ public class LifeController : MonoBehaviour, ISliderVisitor
     private void Awake()
     {
         _IcapturedObject = _capturedObject.GetComponent<ICapturedObject>();
+        children = GetComponentsInChildren<Transform>();
     }
 
     private void Start()
@@ -83,6 +87,7 @@ public class LifeController : MonoBehaviour, ISliderVisitor
         }
         else
         {
+            StartCoroutine(CourotineImmortal());
             Health = HealthGet - dammage;
             OnDammage?.Invoke();
         }
@@ -126,6 +131,26 @@ public class LifeController : MonoBehaviour, ISliderVisitor
         OnEndAction.Invoke();
         OnEndAction = null;
         _IcapturedObject.EndCapture();
+    }
+
+    private IEnumerator CourotineImmortal()
+    {
+        gameObject.layer = 4;
+
+        foreach(Transform child in children)
+        {
+            child.gameObject.layer = 4;
+        }
+
+        yield return new WaitForSeconds(_immortalTime);
+
+
+        foreach (Transform child in children)
+        {
+            child.gameObject.layer = 6;
+        }
+
+        gameObject.layer = 6;
     }
 }
 

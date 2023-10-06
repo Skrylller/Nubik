@@ -35,6 +35,7 @@ public class Location : MonoBehaviour
         for (int i = 0; i < Enemies.Count; i++)
         {
             Enemies[i].gameObject.SetActive(true);
+            Enemies[i].Restart();
         }
         for (int i = 0; i < Diamonds.Count; i++)
         {
