@@ -1,0 +1,1203 @@
+fileFormatVersion: 2
+guid: 5c82312ab2d5b764985bee502dbe5edd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2074
+        width: 341
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a2c9b66344f2348a8c3bb98fec33dd
+      internalID: -1796150606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_1
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 2074
+        width: 343
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb095c0364ec9945861e203652a75a8
+      internalID: -2139607540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_2
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 2074
+        width: 343
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e855c4e462a943e4b963d72eae0eebf3
+      internalID: -1750686299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_3
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 2074
+        width: 343
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96fb4064351be8428a29b541f0c76ef
+      internalID: 1909025177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_4
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2074
+        width: 342
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41a05531d751034a896dd9b1e3c7d0c
+      internalID: -1343997146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_5
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 2074
+        width: 341
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa2ccb7c0367e54293c17e453086330
+      internalID: 1274137221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1777
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40189c03991834488c09f2b1b876e91
+      internalID: 1054624702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_7
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1772
+        width: 343
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86113c600d42a5340b5fddaa203bfa9d
+      internalID: 1424476010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_8
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1772
+        width: 343
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79ef3ed8641d1a4c96514204f335957
+      internalID: 1287182079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_9
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1777
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77575a2bdab892544a51c15a4d836fce
+      internalID: -2074482922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_10
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1777
+        width: 342
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd1c0cc64fa47e489378dbc00c362b2
+      internalID: 1611693166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_11
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 1777
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1548dc0429dc448a5114a3bd4a7817
+      internalID: 1548380286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1481
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b4f5213ee432b4482517f277337551
+      internalID: -685651199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_13
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1481
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b09d0071f718804caa413f1c967f15e
+      internalID: 2089301937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_14
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1481
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d5da9f78f79684da0c134e5ceab04f
+      internalID: 2027033478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_15
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1481
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55879401ff6cb604aab9824dc663bd7c
+      internalID: 444355488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_16
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1481
+        width: 342
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e1ad48d85822545bcddce26ccb35d0
+      internalID: 920212047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_17
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 1481
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dda62716f4871c439f33d7c4013bcdd
+      internalID: 2023547237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1184
+        width: 341
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73dd7db177fc0274e9f722a4a18ada28
+      internalID: -485778576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_19
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1184
+        width: 343
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138f3acda69714b429d2bb4b98ef3a36
+      internalID: 1410073964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_20
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1184
+        width: 343
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca21fc364bf54b48989e4f959572bff
+      internalID: 39053590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_21
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1184
+        width: 343
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639152798e90be84e90a6e3a4c5a32a5
+      internalID: 916530692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_22
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1184
+        width: 342
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdcd7749aa3f1249a30dccd200558e1
+      internalID: 815435379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_23
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 1184
+        width: 341
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4861df6af7ef948b92d3faa7e39b22
+      internalID: 1876333086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 888
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0ed6730b8d9db4ba2b1a3f62ee90bc
+      internalID: -2032120921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_25
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 888
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fac9bab500a734ab5908236a4ab93a
+      internalID: 1479000452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_26
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 888
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c497d499c456d284993d0e2090ae0deb
+      internalID: -1220858180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_27
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 888
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5516f633043d3f45b18ddb231f9f38e
+      internalID: -1262657075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_28
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 888
+        width: 342
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69eacbfdb3a020641a9790a5955d1508
+      internalID: -398385127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_29
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 888
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1aa715419b3cce4cb6fbaa48323c754
+      internalID: -1731887449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 590
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515cd23a579e7f44c90df4c34fcc3ee2
+      internalID: -1841144420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_31
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 590
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9ec83bf0659c142a71e289e333d3b7
+      internalID: 2129117887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_32
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 590
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14050da02b5a43442ac5dc370db4dc5c
+      internalID: -1500521139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_33
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 590
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119816fc9c7a503468a601eae9ffdd03
+      internalID: 215392644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_34
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 590
+        width: 342
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294ab1b288e1e64448590d55381db08c
+      internalID: -1746488987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_35
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 590
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba51c556b6732848a81b306294dbea1
+      internalID: 1811490759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 340
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e405c7e33d6594588ac0bc74ea582d
+      internalID: 7811475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_37
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 294
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de99312275ce9ee4f8c132ec8ccf71d8
+      internalID: 991719293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_38
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 294
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca273e1a04391c48b9801fdb7a65316
+      internalID: -1397321515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_39
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 294
+        width: 343
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6432f63457a66145a32f3e00509ab30
+      internalID: 252124860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_40
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 294
+        width: 342
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da8c69f31c37a14eac24ea494466bc1
+      internalID: -207137530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_41
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 294
+        width: 341
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f32243ecf74eb4b8f7006d4797dbd1
+      internalID: -1270583817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 341
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db17281cbcfd424b866cf862f561b97
+      internalID: 747127759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_43
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 0
+        width: 343
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969b1c6c846d9d1449433d14e7bf1286
+      internalID: -1528153865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_44
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 0
+        width: 343
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c11788dcbc6984a9b12fa851025bca
+      internalID: 420249453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_45
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 0
+        width: 343
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0a60e42dc234f4a98f528bde6fab6d
+      internalID: -1620748352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_46
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 0
+        width: 342
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7e34e3948bfb1438d059390530359c
+      internalID: 1380104780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flagi-evropeskih-gosudarstv_47
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 0
+        width: 341
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204b82164ee2cf5439015295420342a1
+      internalID: 1374059349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Flagi-evropeskih-gosudarstv_0: -1796150606
+      Flagi-evropeskih-gosudarstv_1: -2139607540
+      Flagi-evropeskih-gosudarstv_10: 1611693166
+      Flagi-evropeskih-gosudarstv_11: 1548380286
+      Flagi-evropeskih-gosudarstv_12: -685651199
+      Flagi-evropeskih-gosudarstv_13: 2089301937
+      Flagi-evropeskih-gosudarstv_14: 2027033478
+      Flagi-evropeskih-gosudarstv_15: 444355488
+      Flagi-evropeskih-gosudarstv_16: 920212047
+      Flagi-evropeskih-gosudarstv_17: 2023547237
+      Flagi-evropeskih-gosudarstv_18: -485778576
+      Flagi-evropeskih-gosudarstv_19: 1410073964
+      Flagi-evropeskih-gosudarstv_2: -1750686299
+      Flagi-evropeskih-gosudarstv_20: 39053590
+      Flagi-evropeskih-gosudarstv_21: 916530692
+      Flagi-evropeskih-gosudarstv_22: 815435379
+      Flagi-evropeskih-gosudarstv_23: 1876333086
+      Flagi-evropeskih-gosudarstv_24: -2032120921
+      Flagi-evropeskih-gosudarstv_25: 1479000452
+      Flagi-evropeskih-gosudarstv_26: -1220858180
+      Flagi-evropeskih-gosudarstv_27: -1262657075
+      Flagi-evropeskih-gosudarstv_28: -398385127
+      Flagi-evropeskih-gosudarstv_29: -1731887449
+      Flagi-evropeskih-gosudarstv_3: 1909025177
+      Flagi-evropeskih-gosudarstv_30: -1841144420
+      Flagi-evropeskih-gosudarstv_31: 2129117887
+      Flagi-evropeskih-gosudarstv_32: -1500521139
+      Flagi-evropeskih-gosudarstv_33: 215392644
+      Flagi-evropeskih-gosudarstv_34: -1746488987
+      Flagi-evropeskih-gosudarstv_35: 1811490759
+      Flagi-evropeskih-gosudarstv_36: 7811475
+      Flagi-evropeskih-gosudarstv_37: 991719293
+      Flagi-evropeskih-gosudarstv_38: -1397321515
+      Flagi-evropeskih-gosudarstv_39: 252124860
+      Flagi-evropeskih-gosudarstv_4: -1343997146
+      Flagi-evropeskih-gosudarstv_40: -207137530
+      Flagi-evropeskih-gosudarstv_41: -1270583817
+      Flagi-evropeskih-gosudarstv_42: 747127759
+      Flagi-evropeskih-gosudarstv_43: -1528153865
+      Flagi-evropeskih-gosudarstv_44: 420249453
+      Flagi-evropeskih-gosudarstv_45: -1620748352
+      Flagi-evropeskih-gosudarstv_46: 1380104780
+      Flagi-evropeskih-gosudarstv_47: 1374059349
+      Flagi-evropeskih-gosudarstv_5: 1274137221
+      Flagi-evropeskih-gosudarstv_6: 1054624702
+      Flagi-evropeskih-gosudarstv_7: 1424476010
+      Flagi-evropeskih-gosudarstv_8: 1287182079
+      Flagi-evropeskih-gosudarstv_9: -2074482922
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

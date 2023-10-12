@@ -32,4 +32,9 @@ public class Localizator : MonoBehaviour
         _selectedLaunguage = launguage;
         OnChangeLaunguage?.Invoke(_selectedLaunguage);
     }
+
+    public void ChangeLaunguage(int i)
+    {
+        ChangeLaunguage((Launguage)i);
+    }
 }

@@ -15,10 +15,12 @@ public class LevelButton : PullableObj
 
     Location _location;
 
+    [SerializeField] LocalizationData textdata;
+
     public void Init(Location location, int star, bool open)
     {
         _location = location;
-        text.text = $"Level {location.levelNum}";
+        text.text = $" {textdata.GetLocalization(Localizator.main.SelectedLaunguage)} {location.levelNum}";
 
         for(int i = 0; i < stars.Count; i++)
         {
