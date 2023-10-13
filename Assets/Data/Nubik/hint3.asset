@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - launguage: 0
-    text: Collect the diamond and complete the level by spending the least amount
+    text: collect the diamond and complete the level by spending the least amount
       of ammo to complete the level for 3 stars.
   - launguage: 1
     text: "\u0421\u043E\u0431\u0435\u0440\u0438\u0442\u0435 \u0430\u043B\u043C\u0430\u0437

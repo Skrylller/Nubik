@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - launguage: 0
-    text: Do you want to go to the menu?
+    text: do you want to go to the menu?
   - launguage: 1
     text: " \u0412\u044B \u0445\u043E\u0442\u0438\u0442\u0435 \u0432\u044B\u0439\u0442\u0438
       \u0432 \u043C\u0435\u043D\u044E?"

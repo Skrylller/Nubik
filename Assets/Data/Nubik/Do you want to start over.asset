@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - launguage: 0
-    text: Do you want to start over?
+    text: do you want to start over?
   - launguage: 1
     text: "\u0412\u044B \u0445\u043E\u0442\u0438\u0442\u0435 \u043D\u0430\u0447\u0430\u0442\u044C
       \u0441\u043D\u0430\u0447\u0430\u043B\u0430?"

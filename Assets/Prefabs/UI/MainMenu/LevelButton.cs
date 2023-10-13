@@ -20,7 +20,7 @@ public class LevelButton : PullableObj
     public void Init(Location location, int star, bool open)
     {
         _location = location;
-        text.text = $" {textdata.GetLocalization(Localizator.main.SelectedLaunguage)} {location.levelNum}";
+        text.text = $"{location.levelNum}";
 
         for(int i = 0; i < stars.Count; i++)
         {

@@ -756,11 +756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4078276867794315320, guid: 214ecf2e626d8fa40933a12bfcb00829, type: 3}
       propertyPath: m_text
-      value: level 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4078276867794315320, guid: 214ecf2e626d8fa40933a12bfcb00829, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4078276867794315320, guid: 214ecf2e626d8fa40933a12bfcb00829, type: 3}
       propertyPath: m_margin.w
@@ -780,7 +780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4078276867794315320, guid: 214ecf2e626d8fa40933a12bfcb00829, type: 3}
       propertyPath: m_fontSizeBase
-      value: 24
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4078276867794315320, guid: 214ecf2e626d8fa40933a12bfcb00829, type: 3}
       propertyPath: m_VerticalAlignment
