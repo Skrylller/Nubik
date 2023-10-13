@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using YG;
 
 public class Localizator : MonoBehaviour
 {

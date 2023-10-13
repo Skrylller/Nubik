@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 public class Location : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class Location : MonoBehaviour
 
     public void StartLocation()
     {
+        YandexGame.FullscreenShow();
         MainGameController.main.DeactivateAllLevels();
         MainGameController.main.SetLevel(this);
         gameObject.SetActive(true);
