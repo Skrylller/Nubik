@@ -9,6 +9,11 @@ public class ItemUI : MonoBehaviour
 
     private void Start()
     {
+        if (PlayerInventory.Inventory.GetInventoryItem(item.Item) == null)
+        {
+            PlayerInventory.Inventory.AddItem(item, 5);
+        }
+
         itemPrefab.InitWithCounter(PlayerInventory.Inventory.GetInventoryItem(item.Item));
     }
 }
