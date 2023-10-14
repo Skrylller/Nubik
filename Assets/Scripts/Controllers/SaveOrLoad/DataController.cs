@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Text;
+using YG;
 
 public class DataController : MonoBehaviour
 {
+    [SerializeField] ItemModel _savesItem;
+
     public static DataController main;
 
     public enum DataTypeBool
@@ -33,11 +36,24 @@ public class DataController : MonoBehaviour
     private void Awake()
     {
         main = this;
-        LoadInventory(PlayerInventory.Inventory);
+        LoadInventory(PlayerInventory.Inventory); 
+        PlayerInventory.Inventory.AddItem(_savesItem, 0);
+        PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).OnChange += YandexGame.SaveProgress;
     }
 
-    private void Start()
+    public void YandexLoadUpdateData()
     {
+        YandexGame.LoadProgress();
+        if(YandexGame.savesData.diamonds > PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).GetCount)
+        {
+            PlayerInventory.Inventory.CheckItem(_savesItem.Item, PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).GetCount);
+            PlayerInventory.Inventory.AddItem(_savesItem, YandexGame.savesData.diamonds);
+        }
+        else
+        {
+            YandexGame.SaveProgress();
+        }
+
     }
 
     public void Save()

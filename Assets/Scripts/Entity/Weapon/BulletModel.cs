@@ -14,6 +14,7 @@ public class BulletModel : ScriptableObject
     [SerializeField] private float _distance;
     [SerializeField] private float _distanceBackCheck;
     [SerializeField] private int _hitNumbers;
+    [SerializeField] private SoundController.AudioObj _hitSound;
 
     public BulletEntity BulletPref => _bulletPref;
     public float Speed { get { return _speed; } }
@@ -24,4 +25,5 @@ public class BulletModel : ScriptableObject
     public float Distance { get { return _distance; } }
     public float DistanceBackCheck { get { return _distanceBackCheck; } }
     public float HitNumbers { get { return _hitNumbers; } }
+    public SoundController.AudioObj HitSound => _hitSound;
 }

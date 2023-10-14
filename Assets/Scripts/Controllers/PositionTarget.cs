@@ -63,6 +63,11 @@ public class PositionTarget : MonoBehaviour
         Teleport(Vector3.zero);
     }
 
+    public void SetDeviation(Vector3 deviation)
+    {
+        _deviationPosition = deviation;
+    }
+
     private Vector3 CalculateTarget()
     {
         _targetPos = new Vector3

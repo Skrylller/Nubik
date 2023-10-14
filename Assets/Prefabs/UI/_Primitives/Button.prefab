@@ -133,7 +133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 92.005005, y: 0}
+  m_AnchoredPosition: {x: 92.005, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3106067147228609782
@@ -189,6 +189,8 @@ GameObject:
   - component: {fileID: 8216736689444290369}
   - component: {fileID: 4882810542227657073}
   - component: {fileID: 8573754293159119014}
+  - component: {fileID: 2628198145676568304}
+  - component: {fileID: 8953033972540770234}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -269,7 +271,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4386919265528225726}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8953033972540770234}
+        m_TargetAssemblyTypeName: AnimationEventController, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4882810542227657073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +324,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!95 &2628198145676568304
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6635520714451944140}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8953033972540770234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6635520714451944140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d2a1cbfb16d2e4a9702b0e61cb4be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _action:
+    m_PersistentCalls:
+      m_Calls: []
+  _actions: []
+  _audio:
+  - clip: {fileID: 8300000, guid: e77a9912b769abd4a8e3e9527b043f3d, type: 3}
+    pitch: {x: 1, y: 1}
+    volume: 0.5
 --- !u!1001 &1596332763438255238
 PrefabInstance:
   m_ObjectHideFlags: 0

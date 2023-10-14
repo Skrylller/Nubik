@@ -10,6 +10,8 @@ public class AnimationEventController : MonoBehaviour
     [SerializeField] private List<UnityEvent> _actions;
     private Animator _animator;
 
+    [SerializeField] private List<SoundController.AudioObj> _audio = new List<SoundController.AudioObj>();
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -32,5 +34,10 @@ public class AnimationEventController : MonoBehaviour
     public int GetState()
     {
         return _animator.GetInteger("State");
+    }
+
+    public void PlaySound(int soundNum)
+    {
+        SoundController.main.PlaySound(_audio[soundNum]);
     }
 }

@@ -76,6 +76,10 @@ public class LifeController : MonoBehaviour, ISliderVisitor
     {
         PullableObj part = _partPull.AddObj();
         part.SetTransform(point, angle);
+        if(_model.CameraShapeOnDammage)
+            CameraShape.main.Shape();
+
+        SoundController.main.PlaySound(_model.DammageSound);
 
         if (_health <= dammage)
         {

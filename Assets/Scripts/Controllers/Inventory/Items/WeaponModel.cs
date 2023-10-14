@@ -21,6 +21,7 @@ public class WeaponModel : ItemModel
     [SerializeField] private uint _bulletÑountToShoot;
     [Range(0,360)]
     [SerializeField] private float _spreadAngle;
+    [SerializeField] private SoundController.AudioObj _shootSound;
 
     private uint _bulletInClip;
 
@@ -41,4 +42,5 @@ public class WeaponModel : ItemModel
     public float ShootDelay { get { return _shootDelay; } }
     public uint BulletÑount { get { return _bulletÑountToShoot; } }
     public float SpreadAngle { get { return _spreadAngle; } }
+    public SoundController.AudioObj ShootSound => _shootSound;
 }

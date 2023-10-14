@@ -7,6 +7,8 @@ public class EnemyModel : ScriptableObject, IPlayerObsrver, IMovingModel, IClimp
 {
     [Header("Life")]
     [SerializeField] uint _maxHealth;
+    [SerializeField] bool _cameraShapeOnDammage;
+    [SerializeField] SoundController.AudioObj _dammageSound;
     [Header("Move")]
     [SerializeField] private float _speed;
     [SerializeField] private float _slowDownSpeed;
@@ -44,6 +46,7 @@ public class EnemyModel : ScriptableObject, IPlayerObsrver, IMovingModel, IClimp
             return _canRun ? isRun ? _speed * _runFactor : _speed : _speed; 
         }
     }
+    public bool CameraShapeOnDammage => _cameraShapeOnDammage;
     public float SlowDownSpeed => _slowDownSpeed;
     public bool CanRun { get { return _canRun; } }
     public float RunFactor { get { return _runFactor; } }
@@ -62,6 +65,8 @@ public class EnemyModel : ScriptableObject, IPlayerObsrver, IMovingModel, IClimp
     public int TeleportateMaxDistance { get { return _teleportateMaxDistance; } }
     public Vector2 TeleportationHideDelay => _teleportateHideDelay;
     public Vector2 TeleportationShowDelay => _teleportateShowDelay;
+
+    public SoundController.AudioObj DammageSound => _dammageSound;
 }
 
 public interface IPlayerObsrver

@@ -545,6 +545,8 @@ GameObject:
   - component: {fileID: 6179197069122538411}
   - component: {fileID: 6836455779399033343}
   - component: {fileID: 2403761430190521678}
+  - component: {fileID: 8228417506080703087}
+  - component: {fileID: 6275408918894824029}
   m_Layer: 0
   m_Name: Buttonlevel
   m_TagString: Untagged
@@ -638,6 +640,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6275408918894824029}
+        m_TargetAssemblyTypeName: AnimationEventController, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2403761430190521678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,6 +673,46 @@ MonoBehaviour:
   - {fileID: 7959692503194806777}
   - {fileID: 3523381463034869043}
   textdata: {fileID: 11400000, guid: d2eb51c94c194714189318dca619188b, type: 2}
+--- !u!95 &8228417506080703087
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128527688335334514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6275408918894824029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128527688335334514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d2a1cbfb16d2e4a9702b0e61cb4be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _action:
+    m_PersistentCalls:
+      m_Calls: []
+  _actions: []
+  _audio:
+  - clip: {fileID: 8300000, guid: e77a9912b769abd4a8e3e9527b043f3d, type: 3}
+    pitch: {x: 0, y: 0}
+    volume: 100
 --- !u!1001 &4251149573685121592
 PrefabInstance:
   m_ObjectHideFlags: 0

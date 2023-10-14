@@ -15,6 +15,9 @@ public class HudUI : MonoBehaviour
 
     [SerializeField] List<GameObject> _stars = new List<GameObject>();
 
+    [SerializeField] SoundController.AudioObj _successSound;
+    [SerializeField] SoundController.AudioObj _loseSound;
+
     private Location _location;
     private WeaponModel _weapon;
 
@@ -106,6 +109,7 @@ public class HudUI : MonoBehaviour
 
     public void LevelSuccess(int star)
     {
+        SoundController.main.PlaySound(_successSound);
 
         for (int i = 0; i < _stars.Count; i++)
         {
@@ -127,6 +131,7 @@ public class HudUI : MonoBehaviour
 
     public void Lose()
     {
+        SoundController.main.PlaySound(_loseSound);
         _exitPanel.SetActive(false);
         _successPanel.SetActive(false);
         _restartPanel.SetActive(false);

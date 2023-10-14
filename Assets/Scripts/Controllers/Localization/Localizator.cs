@@ -25,12 +25,20 @@ public class Localizator : MonoBehaviour
         main = this;
     }
 
+    public void YandexLoadUpdateData()
+    {
+        ChangeLaunguage(YandexGame.savesData.myLanguage);
+    }
+
     public void ChangeLaunguage(Launguage launguage)
     {
         if (_selectedLaunguage == launguage)
             return;
 
         _selectedLaunguage = launguage;
+        YandexGame.savesData.myLanguage = (int)launguage;
+
+        YandexGame.SaveProgress();
         OnChangeLaunguage?.Invoke(_selectedLaunguage);
     }
 

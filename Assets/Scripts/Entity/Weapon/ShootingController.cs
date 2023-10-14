@@ -65,6 +65,7 @@ public class ShootingController : MonoBehaviour
                 CreateBullet();
             }
             StartCoroutine(WeaponDelayCourotine());
+            SoundController.main.PlaySound(_weapon.ShootSound);
         }
     }
 

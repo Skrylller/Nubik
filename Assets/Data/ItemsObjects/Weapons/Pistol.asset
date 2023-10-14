@@ -22,3 +22,7 @@ MonoBehaviour:
   _shootDelay: 0.5
   "_bullet\u0421ountToShoot": 1
   _spreadAngle: 0
+  _shootSound:
+    clip: {fileID: 8300000, guid: 708dee86cf61f38418d76b79a5aaaecd, type: 3}
+    pitch: {x: 0.9, y: 1.1}
+    volume: 0.2

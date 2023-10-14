@@ -16,9 +16,9 @@ namespace YG
         public string newPlayerName = "Hello!";
         public bool[] openLevels = new bool[3];
 
-        public int myLanguage;
+        public int myLanguage = 1;
         public int[] stars = new int[20];
-        public int diamonds;
+        public uint diamonds = 5;
 
         // Ваши сохранения
 

@@ -1,5 +1,5 @@
 {
-    "idSave": 18,
+    "idSave": 56,
     "isFirstSession": false,
     "language": "en",
     "promptDone": false,
@@ -9,5 +9,29 @@
         false,
         true,
         false
-    ]
+    ],
+    "myLanguage": 1,
+    "stars": [
+        2,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "diamonds": 5
 }

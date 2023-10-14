@@ -106,6 +106,9 @@ public class BulletEntity : PullableObj
         if (_hit.collider.gameObject.layer == 0)
         {
 
+
+            SoundController.main.PlaySound(_model.HitSound);
+
             if (numHits + 1 >= _model.HitNumbers)
             {
                 Deactive();
@@ -114,7 +117,6 @@ public class BulletEntity : PullableObj
 
 
             Vector2 dirVector = _hit.point - _defPos;
-
 
 
             float sum = Mathf.Abs(dirVector.x) + Mathf.Abs(dirVector.y);

@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: DefaultEnemy
   m_EditorClassIdentifier: 
   _maxHealth: 1
+  _cameraShapeOnDammage: 1
+  _dammageSound:
+    clip: {fileID: 8300000, guid: 755597ba73727104cadedb1a4dd6d8d7, type: 3}
+    pitch: {x: 0.9, y: 1.1}
+    volume: 0.1
   _speed: 20
   _slowDownSpeed: 0
   _canRun: 1
