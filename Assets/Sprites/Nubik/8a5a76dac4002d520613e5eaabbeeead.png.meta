@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -286,13 +286,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      8a5a76dac4002d520613e5eaabbeeead_5: 124656757
-      8a5a76dac4002d520613e5eaabbeeead_6: -1537117545
+      8a5a76dac4002d520613e5eaabbeeead_0: 705822193
       8a5a76dac4002d520613e5eaabbeeead_1: -1429385664
       8a5a76dac4002d520613e5eaabbeeead_2: -280316788
-      8a5a76dac4002d520613e5eaabbeeead_0: 705822193
-      8a5a76dac4002d520613e5eaabbeeead_4: -1990181318
       8a5a76dac4002d520613e5eaabbeeead_3: 1867554299
+      8a5a76dac4002d520613e5eaabbeeead_4: -1990181318
+      8a5a76dac4002d520613e5eaabbeeead_5: 124656757
+      8a5a76dac4002d520613e5eaabbeeead_6: -1537117545
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
