@@ -26,7 +26,7 @@ MonoBehaviour:
   adDisplayCalls: 0
   fullscreenAdInterval: 45
   durationOfAdSimulation: 0.5
-  testErrorOfRewardedAdsInEditor: 1
+  testErrorOfRewardedAdsInEditor: 0
   saveCloud: 1
   flush: 0
   localSaveSync: 1
@@ -209,6 +209,35 @@ MonoBehaviour:
     de: 0
     hi: 0
   fonts:
+    defaultFont: []
+    ru: []
+    en: []
+    tr: []
+    az: []
+    be: []
+    he: []
+    hy: []
+    ka: []
+    et: []
+    fr: []
+    kk: []
+    ky: []
+    lt: []
+    lv: []
+    ro: []
+    tg: []
+    tk: []
+    uk: []
+    uz: []
+    es: []
+    pt: []
+    ar: []
+    id: []
+    ja: []
+    it: []
+    de: []
+    hi: []
+  fontsTMP:
     defaultFont: []
     ru: []
     en: []
