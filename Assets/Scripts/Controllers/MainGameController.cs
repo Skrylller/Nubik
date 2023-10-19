@@ -17,6 +17,7 @@ public class MainGameController : MonoBehaviour
     private void Awake()
     {
         main = this;
+        YandexGame.GetDataEvent += YandexLoadUpdateData;
     }
 
     private void Start()
@@ -86,7 +87,9 @@ public class MainGameController : MonoBehaviour
     {
         for (int i = 0; i < locations.Count; i++)
         {
-            stars[i] = PlayerPrefs.GetInt($"{locations[i].name}", 0);
+            int star = PlayerPrefs.GetInt($"{locations[i].name}", 0);
+            if (star > stars[i])
+                stars[i] = star;
         }
     }
 
@@ -97,9 +100,12 @@ public class MainGameController : MonoBehaviour
             stars[level.levelNum - 1] = star;
             PlayerPrefs.SetInt($"{level.name}", star);
 
-            YandexGame.savesData.stars = stars.ToArray();
+            if (YandexGame.SDKEnabled)
+            {
+                YandexGame.savesData.stars = stars.ToArray();
 
-            YandexGame.SaveProgress();
+                YandexGame.SaveProgress();
+            }
             MainMenu.main.Init(locations, stars);
         }
     }

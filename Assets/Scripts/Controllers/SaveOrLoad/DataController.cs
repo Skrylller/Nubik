@@ -33,16 +33,20 @@ public class DataController : MonoBehaviour
     private const int _itemDummyZone = 3;
     private const int _weaponDummyZone = 1;
 
+
+    private bool yandexLoad = false;
+
     private void Awake()
     {
         main = this;
         LoadInventory(PlayerInventory.Inventory); 
         PlayerInventory.Inventory.AddItem(_savesItem, 0);
-        PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).OnChange += YandexGame.SaveProgress;
+        YandexGame.GetDataEvent += YandexLoadUpdateData;
     }
 
     public void YandexLoadUpdateData()
     {
+        yandexLoad = true;
         YandexGame.LoadProgress();
         if(YandexGame.savesData.diamonds > PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).GetCount)
         {
@@ -54,6 +58,7 @@ public class DataController : MonoBehaviour
             YandexGame.SaveProgress();
         }
 
+        PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).OnChange += YandexGame.SaveProgress;
     }
 
     public void Save()
@@ -103,11 +108,18 @@ public class DataController : MonoBehaviour
     public void LoadInventory(Inventory inventory)
     {
         inventory.Clear();
-
         LoadItemGroup<ItemModel.ItemType>(inventory, _allItems, _itemDummyZone);
         LoadItemGroup<KeyModel.KeyType>(inventory, _allKeys);
         LoadItemGroup<WeaponModel.WeaponType>(inventory, _allWeapons, _weaponDummyZone);
         LoadItemGroup<NoteModel.Note>(inventory, _allNotes);
+        if (YandexGame.SDKEnabled)
+        {
+            if (YandexGame.savesData.diamonds > inventory.GetInventoryItem(_savesItem.Item).GetCount)
+            {
+                PlayerInventory.Inventory.CheckItem(_savesItem.Item, PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).GetCount);
+                PlayerInventory.Inventory.AddItem(_savesItem, YandexGame.savesData.diamonds);
+            }
+        }
     }
 
     public void ShowData()

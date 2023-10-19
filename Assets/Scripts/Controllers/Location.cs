@@ -24,7 +24,9 @@ public class Location : MonoBehaviour
 
     public void StartLocation()
     {
-        YandexGame.FullscreenShow();
+        if(YandexGame.SDKEnabled)
+            YandexGame.FullscreenShow();
+
         MainGameController.main.DeactivateAllLevels();
         MainGameController.main.SetLevel(this);
         gameObject.SetActive(true);
