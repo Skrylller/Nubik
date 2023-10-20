@@ -23,26 +23,14 @@ public class Localizator : MonoBehaviour
     public void Awake()
     {
         main = this;
-        YandexGame.GetDataEvent += YandexLoadUpdateData;
     }
-
-    public void YandexLoadUpdateData()
-    {
-        ChangeLaunguage(YandexGame.savesData.myLanguage);
-    }
-
     public void ChangeLaunguage(Launguage launguage)
     {
         if (_selectedLaunguage == launguage)
             return;
 
         _selectedLaunguage = launguage;
-        if (YandexGame.SDKEnabled)
-        {
-            YandexGame.savesData.myLanguage = (int)launguage;
 
-            YandexGame.SaveProgress();
-        }
         OnChangeLaunguage?.Invoke(_selectedLaunguage);
     }
 

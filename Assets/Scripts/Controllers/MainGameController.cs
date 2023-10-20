@@ -17,7 +17,6 @@ public class MainGameController : MonoBehaviour
     private void Awake()
     {
         main = this;
-        YandexGame.GetDataEvent += YandexLoadUpdateData;
     }
 
     private void Start()
@@ -25,26 +24,6 @@ public class MainGameController : MonoBehaviour
         LoadAllLevels();
 
         NewUIController.main.ExitMenu();
-        MainMenu.main.Init(locations, stars);
-    }
-
-    public void YandexLoadUpdateData()
-    {
-        if (stars.ToArray() == YandexGame.savesData.stars)
-            return;
-
-        for (int i = 0; i < locations.Count; i++)
-        {
-            if (stars[i] < YandexGame.savesData.stars[i])
-            {
-                stars = YandexGame.savesData.stars.ToList();
-                return;
-            }
-            if (i == locations.Count - 1)
-            {
-                YandexGame.SaveProgress();
-            }
-        }
         MainMenu.main.Init(locations, stars);
     }
 

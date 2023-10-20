@@ -41,24 +41,6 @@ public class DataController : MonoBehaviour
         main = this;
         LoadInventory(PlayerInventory.Inventory); 
         PlayerInventory.Inventory.AddItem(_savesItem, 0);
-        YandexGame.GetDataEvent += YandexLoadUpdateData;
-    }
-
-    public void YandexLoadUpdateData()
-    {
-        yandexLoad = true;
-        YandexGame.LoadProgress();
-        if(YandexGame.savesData.diamonds > PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).GetCount)
-        {
-            PlayerInventory.Inventory.CheckItem(_savesItem.Item, PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).GetCount);
-            PlayerInventory.Inventory.AddItem(_savesItem, YandexGame.savesData.diamonds);
-        }
-        else
-        {
-            YandexGame.SaveProgress();
-        }
-
-        PlayerInventory.Inventory.GetInventoryItem(_savesItem.Item).OnChange += YandexGame.SaveProgress;
     }
 
     public void Save()
