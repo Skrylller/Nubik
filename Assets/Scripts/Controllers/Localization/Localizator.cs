@@ -23,7 +23,17 @@ public class Localizator : MonoBehaviour
     public void Awake()
     {
         main = this;
+        YandexGame.GetDataEvent += YandexLaung;
     }
+
+    public void YandexLaung()
+    {
+        if (YandexGame.savesData.language == "ru")
+            ChangeLaunguage(Launguage.Russia);
+        else
+            ChangeLaunguage(Launguage.English);
+    }
+
     public void ChangeLaunguage(Launguage launguage)
     {
         if (_selectedLaunguage == launguage)

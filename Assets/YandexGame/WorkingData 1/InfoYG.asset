@@ -31,7 +31,7 @@ MonoBehaviour:
   flush: 0
   localSaveSync: 1
   saveCloudInterval: 5
-  saveOnQuitGame: 1
+  saveOnQuitGame: 0
   leaderboardEnable: 0
   leaderboardSimulation:
   - technoName: advanced
@@ -183,7 +183,7 @@ MonoBehaviour:
   languages:
     ru: 1
     en: 1
-    tr: 1
+    tr: 0
     az: 0
     be: 0
     he: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
   archivingBuild: 1
   logoImageFormat: 1
   backgroundImageFormat: 3
-  pixelRatioEnable: 0
+  pixelRatioEnable: 1
   pixelRatioValue: 1
-  SDKStartDelay: 0
+  SDKStartDelay: 20
   staticRBTInGame: 0
