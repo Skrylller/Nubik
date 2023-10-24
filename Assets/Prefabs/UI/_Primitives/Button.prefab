@@ -326,7 +326,7 @@ MonoBehaviour:
   m_VerticalFit: 2
 --- !u!95 &2628198145676568304
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -343,7 +343,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8953033972540770234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +362,7 @@ MonoBehaviour:
       m_Calls: []
   _actions: []
   _audio:
-  - clip: {fileID: 8300000, guid: e77a9912b769abd4a8e3e9527b043f3d, type: 3}
+  - clip: {fileID: 8300000, guid: 16d2f90143492f142b2a97b3dc619dab, type: 3}
     pitch: {x: 1, y: 1}
     volume: 0.5
 --- !u!1001 &1596332763438255238

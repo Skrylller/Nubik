@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: DefaultShooter
   m_EditorClassIdentifier: 
   _maxHealth: 300
+  _cameraShapeOnDammage: 0
+  _dammageSound:
+    clip: {fileID: 8300000, guid: 5d86daf30636d9b4c8422890629685bf, type: 3}
+    pitch: {x: 0.9, y: 1.1}
+    volume: 1
   _speed: 15
+  _slowDownSpeed: 0
   _canRun: 1
   _runFactor: 2.2
+  _jumpForce: 0
   _isViewAlways: 0
   _viewDistance: 1000
   _minDistance: 1000

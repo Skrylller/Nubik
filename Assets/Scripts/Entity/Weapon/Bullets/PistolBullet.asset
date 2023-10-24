@@ -22,6 +22,6 @@ MonoBehaviour:
   _distanceBackCheck: 20
   _hitNumbers: 5
   _hitSound:
-    clip: {fileID: 8300000, guid: c1ff143c5b934204c8e37c597285949c, type: 3}
+    clip: {fileID: 8300000, guid: d171be4cd7abf8c4ba70e224a1fa7c19, type: 3}
     pitch: {x: 2, y: 2.1}
     volume: 0.2

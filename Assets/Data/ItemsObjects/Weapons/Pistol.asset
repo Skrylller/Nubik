@@ -23,6 +23,6 @@ MonoBehaviour:
   "_bullet\u0421ountToShoot": 1
   _spreadAngle: 0
   _shootSound:
-    clip: {fileID: 8300000, guid: 708dee86cf61f38418d76b79a5aaaecd, type: 3}
+    clip: {fileID: 8300000, guid: da3b89b23ce08b9468304ccc30c8db10, type: 3}
     pitch: {x: 0.9, y: 1.1}
     volume: 0.2
