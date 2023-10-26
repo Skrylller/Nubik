@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using Plugins.Audio.Core;
 
 public class SoundController : MonoBehaviour
 {
@@ -10,12 +11,15 @@ public class SoundController : MonoBehaviour
     [SerializeField] private AudioMixer _mixer;
 
     [SerializeField] private List<AudioSource> SoundObjs = new List<AudioSource>();
+    [SerializeField] private List<SourceAudio> SoundObjs2 = new List<SourceAudio>();
     [SerializeField] private List<AudioSource> MusicsObjs = new List<AudioSource>();
+    [SerializeField] private List<SourceAudio> MusicsObjs2 = new List<SourceAudio>();
 
     [System.Serializable]
     public class AudioObj
     {
         public AudioClip clip;
+        public string _key;
         public Vector2 pitch = new Vector2(0.9f, 1.1f);
         public float volume = 1;
     }
@@ -51,26 +55,29 @@ public class SoundController : MonoBehaviour
         PlaySound(audio, FindFreeSound(SoundObjs));
     }
 
-    private void PlaySound(AudioObj audio, AudioSource obj)
+    private void PlaySound(AudioObj audio, int objNum)
     {
         if (audio.clip == null) 
             return;
+        SoundObjs[objNum].volume = audio.volume;
+        SoundObjs[objNum].pitch = UnityEngine.Random.Range(audio.pitch.x, audio.pitch.y);
 
-        obj.volume = audio.volume;
-        obj.pitch = UnityEngine.Random.Range(audio.pitch.x, audio.pitch.y);
-        obj.PlayOneShot(audio.clip);
+        if (audio._key == "" || audio._key == null)
+            SoundObjs[objNum].PlayOneShot(audio.clip);
+        else
+            SoundObjs2[objNum].Play(audio._key);
     }
 
-    private AudioSource FindFreeSound(List<AudioSource> objs)
+    private int FindFreeSound(List<AudioSource> objs)
     {
-        foreach(AudioSource obj in objs)
+        for(int i = 0; i < objs.Count; i++)
         {
-            if (!obj.isPlaying)
+            if (!objs[i].isPlaying)
             {
-                return obj;
+                return i;
             }
         }
-        return objs[0];
+        return 0;
     }
 
     public void PressButtonSound()
@@ -83,8 +90,17 @@ public class SoundController : MonoBehaviour
         numMusic = FindFreeMusic(MusicsObjs, audio.clip);
         MusicsObjs[numMusic].volume = audio.volume;
         MusicsObjs[numMusic].pitch = audio.pitch.x;
-        MusicsObjs[numMusic].clip = audio.clip;
+
+
         MusicsObjs[numMusic].gameObject.SetActive(true);
+
+        if (audio._key == null || audio._key == "")
+            MusicsObjs[numMusic].clip = audio.clip;
+        else
+        {
+            MusicsObjs[numMusic].clip = audio.clip;
+            MusicsObjs2[numMusic].Play(audio._key);
+        }
     }
     public void SetDefaultMusic()
     {

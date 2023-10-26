@@ -16,6 +16,7 @@ MonoBehaviour:
   _cameraShapeOnDammage: 0
   _dammageSound:
     clip: {fileID: 8300000, guid: 5d86daf30636d9b4c8422890629685bf, type: 3}
+    _key: Hit1
     pitch: {x: 0.9, y: 1.1}
     volume: 1
   _speed: 15

@@ -24,5 +24,6 @@ MonoBehaviour:
   _spreadAngle: 0
   _shootSound:
     clip: {fileID: 8300000, guid: da3b89b23ce08b9468304ccc30c8db10, type: 3}
+    _key: Shoot
     pitch: {x: 0.9, y: 1.1}
     volume: 0.2
